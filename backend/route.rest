@@ -1,0 +1,21 @@
+GET http://localhost:3000/superheros
+###
+DELETE http://localhost:3000/superheros/61f8cf1f70b0d49cb5e82f64
+###
+PATCH http://localhost:3000/superheros/61fa168656d460abca8b9f1b
+Content-Type: application/json
+
+{"name": "Superman"
+ 
+}
+###
+POST http://localhost:3000/superheros
+Content-Type: application/json
+
+{"name": "Batman",
+ "gender":"male",
+ "strength":50,
+ "speed":60,
+ "intelligence":100
+ 
+}
